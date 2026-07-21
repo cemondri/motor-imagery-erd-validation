@@ -54,7 +54,7 @@ what the data says rather than what I hoped it would say.
 
 ## Related writing
 
-I documented this process (in Turkish) on Substack: [link]
+I documented this process (in Turkish) on Substack: [https://substack.com/@mralasahin/note/p-207274574?utm_source=notes-share-action&r=8aezfj]
 
 ## Data
 
