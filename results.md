@@ -43,3 +43,24 @@ Out of curiosity, I also ran the analysis on all 109 subjects (exploratory + hel
 The pre-registered validation did not confirm the exploratory finding. In the held-out data the effect was small (d = -0.14), non-significant (p = 0.165), and the sign distribution was nearly balanced (25/24) — the directional lean seen in the exploratory phase did not hold.
 
 This is the expected outcome when an exploratory result — especially one obtained through post-hoc pooling — is tested properly. The value of this repository is not a finding; it is the demonstration of testing one's own claim honestly and reporting the result as-is.
+
+## Deviation from Pre-Registration
+
+The committed pre-registration described a PSD-based analysis with an 8–13 Hz
+band and a 0.5–2.5s movement window. The actual analysis code, used
+consistently across all exploratory phases and this held-out test, differs:
+
+- **Method:** wavelet (Morlet), not PSD
+- **Frequency band (ERD measurement):** 8–20 Hz
+- **Time window:** 1.0–3.0s
+- **Baseline:** −1 to 0s, percent change
+
+This mismatch is a documentation error: the pre-registration text was written
+to describe the pipeline but did not match the code that was actually run.
+The code was fixed throughout (same wavelet function for exploratory and
+held-out phases), so the held-out test is still a valid comparison to the
+exploratory result — both used identical processing. However, the
+pre-registration did not accurately capture the parameters in advance.
+
+I am reporting this rather than silently editing the plan, because the entire
+point of pre-registration is that the record is honest.
