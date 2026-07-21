@@ -52,6 +52,13 @@ The value here isn't a discovery. It's the workflow: separating exploration
 from confirmation, committing to a plan before seeing the data, and reporting
 what the data says rather than what I hoped it would say.
 
+## A note on honesty
+
+The committed pre-registration contained a parameter mismatch with the actual
+code (PSD vs wavelet, and different band/window). Rather than editing the
+committed plan, I documented the deviation openly in `results.md`. See the
+"Deviation from Pre-Registration" section there.
+
 ## Related writing
 
 I documented this process (in Turkish) on Substack: [https://substack.com/@mralasahin/note/p-207274574?utm_source=notes-share-action&r=8aezfj]
